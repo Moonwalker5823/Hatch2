@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#SearchBar {
+    background-color: whitesmoke;
+    height: 24vh;
+}
+
+#SearchByName {
+opacity: .4;
+font-size: large;
+width: 100%;
+height: 50%;
+}
+
+#SearchByTag {
+    opacity: .4;
+    font-size: large;
+    width: 100%;
+    height: 50%;
+}
+
+#Robots {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  justify-content: flex-start;
+  height: 90vh;
+}
+/* #robot{
+  
+} */
+#studentPic::before {
+  /* border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin: 50px; */
+}
+#button {
+  background-color: lightgray;
+  color: black;
+}
