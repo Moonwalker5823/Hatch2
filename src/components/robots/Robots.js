@@ -8,7 +8,6 @@ const Robots = () => {
   return (
     <Context.Consumer>
     {value => {
-        console.log(value)
         if(value === undefined) {
           return <Spinner/>
         } else {

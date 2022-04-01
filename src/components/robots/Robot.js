@@ -2,25 +2,26 @@ import React from 'react'
 import { Context } from '../../context'
  
 
-
 const Robot = (props) => {
 
-const calcAvg = (...arr) => 
+  const calcAvg = (...arr) => 
    arr.reduce((a, b) => a + parseInt(b), 0) /
-  arr.length
+    arr.length
 
-  const {firstName, lastName, email, company, skill, average, pic} = props
+  const {firstName, lastName, email, company, skill, average, pic, displayGrades} = props
   return (
-    <div>
+    <div className='studentContainer'>
       <>
-      <img id="studentPic" src={pic} alt={`${firstName}${lastName}pic`}/>
+      <img className="studentPic" src={pic} alt={`${firstName}${lastName}pic`}/>
       </>
-      <h1 id="StudentNameHeading">{firstName} {lastName}</h1>
-      <p>Email: {email}<br/>
+      <div className="studentInfoContainer">
+      <h1 className="StudentNameHeading">{firstName} {lastName}</h1>
+      <p className='StudentInfo'>Email: {email}<br/>
         Company: {company}<br/>
         Skill : {skill}<br/>
-        Average: {calcAvg(average)}%</p>
-        <button id="button" className='btn btn-secondary'>new tag</button>
+        Average: {Math.floor(calcAvg(average))}%</p>
+        <button id="button" className='btn-sm btn-secondary'>new tag</button><br/>      <input className="input"type="text" name='tag' placeholder='add a tag'/>   
+      </div>
       <hr/>
    </div>
   )

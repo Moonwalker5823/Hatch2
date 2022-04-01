@@ -11,7 +11,7 @@ function App() {
       <>
         <SearchBar/>
       </>
-      <div>
+      <div id="robotContainer">
         <Robots/>
       </div>
 

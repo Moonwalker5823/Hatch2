@@ -2,11 +2,12 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  background-color: whitesmoke;
 }
 
 #SearchBar {
     background-color: whitesmoke;
-    height: 24vh;
+    height: 18vh;
 }
 
 #SearchByName {
@@ -23,24 +24,47 @@ height: 50%;
     height: 50%;
 }
 
-#Robots {
+.Robots {
   background-color: whitesmoke;
-  font-family: sans-serif;
+  /* font-family: raleway; */
   justify-content: flex-start;
   height: 90vh;
 }
-/* #robot{
-  
-} */
-#studentPic::before {
-  /* border: 1px solid black;
+
+.studentPic {
+  border: 1px solid black;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: whitesmoke;
-  margin: 50px; */
+  background-color: white;
+  margin: 50px;
 }
 #button {
   background-color: lightgray;
   color: black;
+}
+
+.input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color:  black
+  }
+  .input:focus {
+    border-color: black
+}
+
+.studentContainer {
+  display: flex;
+ 
+}
+.studentInfoContainer {
+  flex-direction: column;
+  margin: 50px;
+  
+}
+.StudentNameHeading {
+  font-family: "raleway", san-serif;
+}
+.StudentInfo {
+  font-family: "raleway";
 }
