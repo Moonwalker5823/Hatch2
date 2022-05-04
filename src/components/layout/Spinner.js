@@ -1,5 +1,5 @@
-import React from 'react';
-import LoadingIcon from './Loading_icon.gif';
+import React from "react";
+import LoadingIcon from "./Loading_icon.gif";
 
 const Spinner = () => {
   return (
@@ -7,11 +7,10 @@ const Spinner = () => {
       <img
         src={LoadingIcon}
         alt="Loading..."
-        style={{ width: '200px', margin: ' 40px auto', display: 'block' }}
+        style={{ width: "200px", margin: " 40px auto", display: "block" }}
       />
     </div>
   );
 };
 
 export default Spinner;
-

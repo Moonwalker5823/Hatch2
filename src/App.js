@@ -1,23 +1,21 @@
-import './App.css';
-import SearchBar from './components/layout/SearchBar';
-import Robots from './components/robots/Robots';
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import { Provider } from "./context"
+import "./App.css";
+import SearchBar from "./components/layout/SearchBar";
+import Robots from "./components/robots/Robots";
+import { RobotContext } from "./context";
+import { useSetup } from "./store";
 
-function App() {
+export const App = () => {
+  const { students, searchName, setSearchName, addTag, displayTags,calcAvg, showGrades, isShowingGrades, setIsShowingGrades,searchTag, setSearchByTag} = useSetup();
   return (
-    <Provider>
-    <Router>
-      <>
-        <SearchBar/>
-      </>
-      <div id="robotContainer">
-        <Robots/>
+    <RobotContext.Provider value={{ students, searchName, setSearchName, addTag, displayTags,calcAvg, showGrades, isShowingGrades, setIsShowingGrades,searchTag, setSearchByTag }}>
+      <div id="appContainer">
+        <div id="robotBox">
+          <SearchBar />
+          <div id="robotContainer">
+            <Robots />
+          </div>
+        </div>
       </div>
-
-    </Router>
-    </Provider>
+    </RobotContext.Provider>
   );
-}
-
-export default App;
+};

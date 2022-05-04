@@ -1,14 +1,14 @@
-import React from 'react'
-import SeacrhByName from './SeacrhByName'
-import SearchByTag from './SearchByTag'
+import React from "react";
+import SearchByName from "./SearchByName";
+import SearchByTag from "./SearchByTag";
 
- const SearchBar = () => {
+const SearchBar = () => {
   return (
-    <nav id='SearchBar'>
-        <SeacrhByName/>
-        <SearchByTag/>
+    <nav id="SearchBar">
+      <SearchByName />
+      <SearchByTag />
     </nav>
-  ) 
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
